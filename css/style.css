@@ -1,0 +1,154 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    border-top: 1px solid #E0E0E0;
+    padding: 1em;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+    padding: 1.5em;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Verdana;
+}
+
+.header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    display: flex;
+}
+
+.header__text {
+    font-family: Verdana;
+    width: 100%;
+    margin-top: 12px;
+    text-align: right;
+    line-height: 0.5em;
+    margin-right: 1em;
+}
+
+.header__logo {
+    height: 84px;
+    margin-left: 1em;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+.personal {
+    width: 100%;
+}
+
+.personal_img {
+    margin-top: 20px;
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.featured-work {
+    width: 100%;
+    color: #7d97ad;
+}
+
+.featured-work__items {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured-work__item {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.figure-img {
+    vertical-align: top;
+    text-align: center;
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.featured-work__item-title--emb-link {
+    display: none;
+} 
+
+.figure-caption {
+    text-align: center;
+}
+
+@media screen and (max-width: 183px) {
+    .header__title {
+        font-size: 1em;
+    }
+    .header__description {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .header {
+        display: inline;
+    }
+    .header__text {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .featured-work__item-title--emb-link {
+        display: inline;
+    } 
+    .featured-work__item-title {
+        display: none;
+    }
+    .figure-url {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px) and (min-width:183px) {
+    .header__title {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .featured-work__items {
+        display: block;
+    }
+    .featured-work__item-title {
+        margin: 0.5em;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .featured-work__items {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main, header {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .featured-work__item-title {
+        margin: 1em;
+    }
+}
